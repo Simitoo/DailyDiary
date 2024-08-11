@@ -29,6 +29,11 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow-y: auto; 
+}
+
+header, footer {
+    flex: none;
 }
 
 h1 {
@@ -68,11 +73,16 @@ label {
 }
 
 .site-post{
-    flex: 1;
+    flex: auto;
     margin: 0 auto;
     width: 70%;
-    background: #f9ceb5;
-    overflow-y: auto;  
+    background: #f9ceb5; 
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -83,12 +93,20 @@ label {
 }
 
 .site-footer{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
     background: #93493c;
-    color: wheat; 
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: left;
+}
+
+.site-footer p {
+    padding-bottom: 0.5em;
+    font-size: small;
+    color: wheat; 
 }
 
 #new-post {
@@ -106,7 +124,7 @@ label {
 
 #post-date {
     padding: 0.2em;
-    border: 2.5px solid #e08b6a;
+    border: 1.5px solid #93493c;
     border-radius: 0.2em;
     background-color: #fff1dc;
     font-style: italic;
