@@ -13,23 +13,25 @@
 
     <section class="site-section site-post">
         <h1>My Diary</h1>
-        <ul id="post-list">
-            <form id="post-form">
-                <label for="new-post">What's happend today?</label>
-                <input type="text" id="post-title" placeholder="You can put a title here">
-                <textarea name="new-post" id="new-post" rows="5" cols="33"></textarea>
-                <div class="container">
-                    <input type="date" id="post-date">
-                    <button id="submit-btn">Submit</button>
-                </div>
-            </form>
-            <script src="app.js"></script>
-        </ul>
+
+        <form id="post-form">
+            <label for="new-post">What's happend today?</label>
+            <input type="text" id="post-title" placeholder="You can put a title here">
+            <textarea name="new-post" id="new-post" rows="5" cols="33"></textarea>
+            <div class="container">
+                <input type="date" id="post-date">
+                <button id="submit-btn">Submit</button>
+            </div>
+        </form>
+            <ul id="post-list"></ul>
     </section>
 
     <footer class="site-section site-footer">
         <p>© 2024 Daily Diary, Inc.</p>
         <p>Created by Angel Draganski</p>
     </footer>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/xmlParser.js"></script>
 </body>
 </html>
